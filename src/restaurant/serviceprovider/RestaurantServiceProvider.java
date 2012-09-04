@@ -7,8 +7,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class RestaurantServiceProvider {
 
 	public static void main(String[] args) throws Exception {
-
-		// fill in here
-
+		ApplicationContext ac = new ClassPathXmlApplicationContext("rest-server-config.xml");
+		
+		System.out.println("Server is ready!");
 	}
 }

@@ -13,7 +13,7 @@ public class RestaurantClient {
 	private RestaurantService restService;
 	
 	public RestaurantClient() {
-		ApplicationContext ac = new ClassPathXmlApplicationContext("rest-client-config,xml");
+		ApplicationContext ac = new ClassPathXmlApplicationContext("rest-client-config.xml");
 		restService = (RestaurantService) ac.getBean("restService");
 	}
 	
